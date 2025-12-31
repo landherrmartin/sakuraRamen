@@ -46,19 +46,16 @@ header {
 
 }
 
-
 .logo-header {
     height: 64px;
     width: 64px;
 }
-
 
 .link {
     padding-right: 50px;
     text-decoration: none;
     color: white;
 }
-
 
 .link:hover {
     color: #9F0908
@@ -95,9 +92,6 @@ header {
     margin: 0px;
 }
 
-
-
-
 .h2 {
     color: #9F0908;
     font-weight: bold;
@@ -107,8 +101,6 @@ header {
     justify-content: center;
     margin: 0px;
 }
-
-
 
 .order {
     font-size: 56px;
@@ -141,37 +133,31 @@ header {
 .container-menu {
     background-image: url(img/section_our_menu_bg.jpg);
     padding: 120px 160px;
+    margin-bottom: 120px;
+}
+
+.menu-wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #675E54;
 }
 
 .menu-1 {
-    display: flex;
     justify-content: start;
-    align-items: center;
     margin-top: 64px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #675E54;
 }
 
 .menu-2 {
-    display: flex;
     justify-content: end;
-    align-items: center;
     margin-top: 56px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #675E54;
 }
 
 .menu-3 {
-    display: flex;
     justify-content: start;
-    align-items: center;
     margin-top: 56px;
-    margin-bottom: 120px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #675E54;
+
 }
 
 .h3 {
@@ -326,5 +312,27 @@ tr, th {
 
     .logo-footer {
         align-items: center;
+    }
+
+    .td {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .table-style .tr .th {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .table-style {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .table-style .tr {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }
