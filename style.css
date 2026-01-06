@@ -40,11 +40,11 @@ header {
 .nav {
     display: flex;
     align-items: center;
-    padding-right: 50px;
     text-decoration: none;
     color: white;
-
 }
+
+
 
 .logo-header {
     height: 64px;
@@ -102,17 +102,16 @@ header {
     margin: 0px;
 }
 
-.order {
-    font-size: 56px;
-    font-weight: bold;
-    font-family: "Economica", sans-serif;
+/* order */
+
+.container-order {
     display: flex;
     justify-content: space-evenly;
     margin-top: 64px;
     margin-bottom: 120px;
 }
 
-.order1 {
+.order {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,15 +119,20 @@ header {
 
 .img-order {
     width: 128px;
-    margin-bottom: 16px;
 }
 
 .text-order {
     width: 200px;
+    height: 100px;
     display: inline-block;
     text-align: center;
-
+    font-size: 56px;
+    font-weight: bold;
+    font-family: "Economica", sans-serif;
+    margin-top: 16px;
 }
+
+/* our menu */
 
 .container-menu {
     background-image: url(img/section_our_menu_bg.jpg);
@@ -165,31 +169,37 @@ header {
     font-family: "Economica", sans-serif;
     font-size: 56px;
     font-weight: bold;
-    margin-bottom: 16px;
+
 }
 
-.table {
-    border-collapse: separate;
-    border-spacing: 8px;
+.text-rigth {
+    text-align: right;
 }
 
 .table-style {
-    margin-left: 80px;
-    margin-right: 80px;
+    width: 500px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+th {
+    padding-bottom: 16px;
 }
 
 td {
-    padding: 8px;
+    padding-bottom: 8px;
 }
 
-tr, th {
-    padding: 16px;
+th {
+    text-align: left;
 }
 
 .img-menu {
     width: 352px;
     height: 352px;
 }
+
+/* adress */
 
 .adress-container {
     margin-top: 120px;
@@ -205,11 +215,17 @@ tr, th {
     margin-top: 8px;
 }
 
+.adress-marker {
+    width: 22px;
+    height: 22px;
+}
 
 .google {
     margin-top: 64px;
     width: 100%;
 }
+
+/* footer */
 
 .footer {
     background-color: #0A141E;
@@ -223,7 +239,6 @@ tr, th {
 .logo-footer {
     display: flex;
 }
-
 
 .img-logo {
     width: 44px;
@@ -241,98 +256,231 @@ tr, th {
     height: 40px;
 }
 
-@media (max-width:1050px) {
+@media (max-width:1000px) {   
+    header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }   
+}
+
+@media (max-width:900px) {
+    /*stile für tablet */
+
+    /*header*/
     .link {
         display: none;
     }
 
     header {
         padding-left: 50px;
-        padding-right: 16px;
+        padding-right: 50px;
+    }
+
+    .phone-button {
+        font-size: 20px;
+        width: 180px;
     }
 
     .headline {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-}
-
-
-@media (max-width:620px) {
-    .h2 {
-        text-align: center;
+        font-size: 72px;
     }
 
-    .order {
-        flex-direction: column;
-        margin-top: 30px;
-    }
-
-    .order1 {
-        padding: 20px
+    .media-size {
+        font-size: 20px;
     }
 
     .main-container {
-        margin-bottom: 30px;
+        margin-bottom: 96px;
+    }
+
+    /*how to order*/
+
+    .h2 {
+        font-size: 64px;
+    }
+
+    .container-order {
+        
+        margin-bottom: 96px;
+    }
+
+    .img-order {
+        width: 112px;
+    }
+
+    .text-order {
+        font-size: 32px;
+        width: 112px;
+        margin-top: 8px;
+    }
+}    
+@media (max-width:1237px)   {
+    /* our menu*/
+
+    .container-menu {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .table-style {
+        /* width: 280px; */
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .h3 {
+        font-size: 32px;
+        padding-left: 0px;
+    }
+
+    .text-rigth {
+        text-align: right;
+    }
+
+    .menu-wrapper {
+        font-size: 24px;
+        gap: 50px;
+    }
+        
+    /*adress*/
+
+    .adress-marker {
+        width: 18px;
+        height: 18px;
     }
 }
 
-@media (max-width:920px) {
-    .container-menu {
-        padding-left: 0px;
-        padding-right: 0px;
+@media (min-width: 315px) and (max-width: 700px) {
+    /* stile für phone */
+
+    /* header */
+
+    header {
+        height: 64px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
-    .menu-1 {
+    .link {
+        display: none;
+    }
+
+    .logo-header {
+        width: 40px;
+        height: 40px;
+    }
+
+    .phone-button {
+        font-size: 16px;
+        width: 150px;
+        height: 25px;
+    }
+
+    /* headline */
+
+    .headline {
+        font-size: 40px;
+    }
+
+    .media-size {
+        font-size: 16px;
+    }
+
+    .main-container {
+        margin-bottom: 72px;
+    }
+}
+@media (min-width: 315px) and (max-width: 767px) {
+
+    /* how to order */
+
+    .h2 {
+        font-size: 40px;
+    }
+
+    .container-order {
+        flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 72px;
+    }
+
+    .img-order {
+        width: 112px;
+    }
+
+    .text-order {
+        font-size: 32px;
+        width: 100px;
+        margin-top: 8px;
+    }
+
+    .order {
+        margin-top: 32px;
+    }
+
+    /* our menu */
+
+    .container-menu {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .img-menu { 
+        height: 290px;
+        width: 290px;
+    }
+
+    .menu-1, .menu-2, .menu-3 {
         flex-direction: column;
     }
 
     .menu-2 {
         flex-direction: column-reverse;
-
     }
 
-    .menu-3 {
-        flex-direction: column;
+    .table-style {
+        width: 290px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 16px;
     }
 
     .h3 {
-        padding-left: 125px;
-    }
-}
-
-@media (max-width:450px) {
-    .headline {
-        font-size: 80px;
+        font-size: 32px;
     }
 
-    .media {
-        font-size: 20px;
+    .text-rigth {
+        text-align: right;
+    }
+
+    .menu-wrapper {
+        font-size: 24px;
+    }
+
+    /* adress */
+
+    .adress-marker {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* footer */
+
+    .footer {
+        height: 86px;
     }
 
     .logo-footer {
         align-items: center;
     }
 
-    .td {
-        padding-left: 0;
-        padding-right: 0;
+    .footer-text {
+        display: none;
     }
 
-    .table-style .tr .th {
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .table-style {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .table-style .tr {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .footer {   
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
